@@ -1,0 +1,239 @@
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  color: inherit;
+}
+
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+
+:root {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  cursor: default;
+  line-height: 1.5;
+  overflow-wrap: break-word;
+  -moz-tab-size: 4;
+  tab-size: 4
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+button {
+  border: 0;
+  outline: none;
+  /* cursor: pointer; */
+  background: transparent;
+}
+
+a {
+  text-decoration: none;
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+html,
+body,
+.wrap {
+  width: 100%;
+  height: 100%
+}
+
+body {
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+.wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-scetion {
+  width: 90%;
+  max-width: 600px;
+  margin: 20px auto;
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 500;
+  color: #333;
+  margin-top: 15px;
+}
+
+form {
+  margin-top: 15px;
+}
+
+.input-group {
+  display: block;
+  width: 100%;
+  position: relative
+}
+
+label {
+  display: flex;
+  width: 100%;
+  gap: 3px;
+  align-items: center;
+  text-align: left;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+label i {
+  font-size: 24px;
+}
+
+input[type="text"],
+input[type="time"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.input-btn-wrap {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.input-btn-wrap input[type="text"],
+.input-btn-wrap input[type="time"] {
+  flex: 4 1 0;
+  height: 46px;
+}
+
+.input-btn-wrap button {
+  max-width: 90px;
+  flex: 1 1 0;
+  background-color: #164F73;
+  height: 46px
+}
+
+.weekend-check {
+  position: absolute;
+  display: flex;
+  gap: 10px;
+  border: 1px solid #164F73;
+  align-items: center;
+  padding: 2px 15px;
+  border-radius: 20px;
+  top: 0;
+  right: 0;
+  font-size: 13px;
+}
+
+.weekend-check.disabled {
+  cursor: not-allowed;
+  border-color: #000;
+  opacity: 0.4;
+}
+
+.weekend-check > span {
+  width: auto;
+}
+
+.weekend-check label {
+  width: auto;
+  margin: 0
+}
+
+.button-wrap {
+  display: flex;
+  gap: 10px;
+}
+
+.button-wrap button {
+  flex: 1 1 auto;
+}
+
+section button {
+  padding: 10px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+section button:hover {
+  filter: brightness(1.2);
+}
+
+.arrival-btn {
+  background: #03738C
+}
+
+.depature-btn {
+  background: #F20C36
+}
+
+#report {
+  display: flex;
+  text-align: left;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  height: 120px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.copy-btn {
+  width: 100%;
+  margin-top: 15px;
+  background: #F2784B
+}
+
+.toast {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background: rgb(0, 122, 255);
+  color: #fff
+}
+
+@media (max-width: 400px) {
+  section {
+    width: 100%;
+  }
+}
